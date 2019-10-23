@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Bar Chart</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">   
+</head>
+
+<body>
+
+  <h1>Happiness by Country in Western Europe (2016)</h1>
+
+  <div id="chart">
+    <div id="tooltip" class="hidden">
+      <p ><span id="happiness">hello</span></p>
+    </div>
+  </div>
+
+  <script src="./d3.js"></script>
+
+  <script>
+
+		// **** THE DATA ****
+
+   	const countries = [
+      {country: "Austria", happiness_index: 7.119},
+      {country: "Belgium", happiness_index: 6.929},
+      {country: "Cyprus", happiness_index: 5.546},
+      {country: "Denmark", happiness_index: 7.526},
+      {country: "Finland", happiness_index: 7.413},
+      {country: "France", happiness_index: 6.478},
+      {country: "Germany", happiness_index: 6.994},
+      {country: "Greece", happiness_index: 5.033},
+      {country: "Iceland", happiness_index: 7.501},
+      {country: "Ireland", happiness_index: 6.907},
+      {country: "Italy", happiness_index: 5.977},
+      {country: "Luxembourg", happiness_index: 6.871},
+      {country: "Malta", happiness_index: 6.488},
+      {country: "Netherlands", happiness_index: 7.339},
+      {country: "North Cyprus", happiness_index:  5.771},
+      {country: "Norway", happiness_index: 7.498},
+      {country: "Portugal", happiness_index: 5.123},
+      {country: "Spain", happiness_index: 6.361},
+      {country: "Sweden", happiness_index: 7.291},
+      {country: "Switzerland", happiness_index: 7.509},
+      {country: "United Kingdom", happiness_index: 6.725}
+   		]   
+
+   	//------------------------------------------------------------------------------
+
+   	// **** THE SETUP ****
+
+   	//  --> SPACING AND SIZES
+      
+
+
+	  // --> SCALES
+
+    // In this chart we're doing scale band a little differently.  Instead of using the index number in the band, we're actually gonna use the country name.
+    // This makes a little less work down the road.
+    // In the line chart example is a little more explicit, but allows for a little modification
+
+    
+
+    //------------------------------------------------------------------------------
+
+    // **** PUT IT ON THE PAGE ****
+
+    //  --> CREATE SVG
+
+   
+
+
+      //  --> X-AXIS
+
+      
+
+
+      //  --> Y-AXIS
+
+      
+
+
+      // --> ADD BARS
+
+
+
+          // MOUSEOVER FOR TOOLTIP
+
+          // need function here cuz using (this)
+       
+
+
+
+          //Update the tooltip position and value
+   
+
+
+    </script>
+</body>
